@@ -1,0 +1,96 @@
+.form-container{
+  background: red;
+  max-width: 500px;
+  margin: 130px auto;
+  border-radius: 1.22rem;
+}
+
+.form-container h2{
+  text-align: center;
+  font-size: 2.555rem;
+  padding: 2rem 0;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.1rem;
+  padding: 1rem;
+}
+
+.login-form input{
+  padding: 1rem 6rem 1rem 1rem ;
+  font-size: 1rem;
+  border-radius: .77rem;
+  border: none;
+  background: lightblue;
+}
+
+.login-form input:last-child{
+  padding: 1rem 3rem;
+  color: drak;
+}
+
+.login-form input.verify-btn{
+  color: red;
+  padding: .33rem 1.333rem;
+}
+
+.login-extra{
+  padding: 2.44rem;
+}
+
+.login-extra{
+   font-size: 1.2rem;
+}
+
+.forgot{
+  padding: 1rem 0;
+}
+
+@media screen and (max-width: 600px) {
+  .form-container{
+    background: green;
+    max-width: 500px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .form-container{
+    background: purple;
+    max-width: 380px;
+  }
+}
+
+@media screen and (max-width: 220px) {
+  .form-container{
+    max-width: 200px;
+/*     height: 70vh; */
+    border-radius: .42rem;
+  }
+  
+  .form-container h2{
+    font-size: 1.45rem;
+    padding: 1.77rem 0;
+  }
+  
+  .login-form input{
+    padding: .66rem 1rem .66rem .66rem ;
+    font-size: .77rem;
+    border-radius: .37rem;
+  }
+  
+  .login-form input:last-child{
+    padding: .66rem 2.33rem;
+  }
+  
+  .login-extra{
+    padding: 2.33rem;
+  }
+  
+  .login-extra{
+    font-size: .97rem;
+  }
+}
