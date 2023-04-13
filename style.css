@@ -1,20 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,500;0,700;0,800;1,300;1,400;1,500;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Labrada:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cousine:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 *{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 
-/* body, html{
-	height: 100%;
-} */
+body, html{
+	background: #90e0ef;
+}
 
 img{
 	width: 100%;
 	object-fit: cover;
-}
-
-h3{
-	color: ghostwhite;
 }
 
 li{
@@ -43,7 +44,7 @@ a{
 	}
 
 	.navbar{
-		background: #2C3333;
+		background: #0096c7;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -66,31 +67,33 @@ a{
 		text-transform: uppercase;
 		font-size: 1.477rem;
 	}
-
-/*  	.mobile-nav{
-		padding: 1rem;
-	}
-
-  #mobile-menu{
-  	background: #2C3333;
-		position: relative;
-		left: 0;
-		margin-top: 0;
-		height: 120px;
-	}  */
 	
 	nav ul li a{
-		color: #CBE4DE;
+		color: #caf0f8;
 	}
 
+	nav ul li a:hover{
+		color: #03045e;	
+		font-size: 1.66rem;
+/* 		border-bottom: 1px solid #03045e; */
+	}
+
+	.logo h1{
+		color: #023e8a;
+		font-size: 2.33rem;
+		font-family: 'Sedgwick Ave Display', cursive;
+	}
 /* ================================ end navbar =================================== */
 
 
 
 /* ================== hero =================== */
+/* 67.37 */
 .register-container{
 	width: 100%;
 	height: 67.37vh;
+	box-shadow: 10px 10px 5px lightblue;
+/* 	margin-top: 120px; */
 }
 
 .hero-image {
@@ -107,7 +110,6 @@ a{
   top: 47%;
   left: 30%;
   transform: translate(-50%, -50%);
-  color: white;
   height: 3em;
   width: 30%;
 }
@@ -118,39 +120,53 @@ a{
 
 .hero-text h1{
 	font-size: 3rem;
+	font-family: 'Sedgwick Ave Display', cursive;
+	color: #ade8f4;
 }
 
 
 .hero-text p{
 	font-size: 1.5rem;
+	color: #48cae4;
+	font-family: 'Figtree', sans-serif;
 }
 
 
 .btn {
   border: none;
-  color: white;
+  color: #00b4d8;
   padding: 14px 32px;
   cursor: pointer;
+  font-family: 'Cousine', monospace;
 }
 
 .register-btn{
-	background-color: #04AA6D;
-	font-size: 2rem;
+	background-color: #03045e;
+	font-size: 1.66rem;
 }
+
+.register-btn:hover{
+	color: #ade8f4;
+	background-color: #023e8a;
+}
+
 
 /* ================== end hero =================== */
 
-
+.prize-section{
+	background: #90e0ef;
+	padding: 3.777em 3.8em;
+}
 
 .prize-container{
-	margin: 3em 3.8em;
+/* 	margin: 0 3.8em; */
 }
 
 .prize-container h1{
 	text-align: center;
 	font-size: 2.3rem;
 	font-family: 'Signika Negative', sans-serif;
-	color: #113d68;
+	color: #023e8a;
 }
 
 .prizes{
@@ -169,6 +185,7 @@ a{
 	font-size: 1.7rem;
 	font-weight: 300;
 	font-family: 'Roboto', sans-serif;
+	color: #023e8a;
 }
 
 
@@ -186,10 +203,9 @@ a{
 
 .prize-counter h3{
 	font-size: 2rem;
-	font-weight: 100;
-	font-family: 'Poppins', sans-serif;
-/* 	text-align: center;
-	vertical-align: center; */
+	font-weight: 600;
+	font-family: 'Roboto', sans-serif;
+	color: #03045e;
 }
 
 .grid-prizes{
@@ -203,8 +219,7 @@ a{
 /* ========= footer ============ */
 
 footer{
-	background: #46469d;
-	border-radius: 1rem 1rem 0 0;
+	background: #03045e;
 }
 
 .footer-container{
@@ -224,10 +239,12 @@ footer{
 .footer-card h2{
 	text-align: center;
 	text-transform: uppercase;
+	color: #ade8f4;
 }
 
 .footer-card p{
 	font-size: 1rem;
+	color: #48cae4;
 }
 
 .social{
@@ -248,10 +265,17 @@ footer{
 
 .social-link li i{
 	padding: .3em 1em;
+	color: #48cae4;
 }
 
 .social-link li{
 	font-size: 1.5rem;
+	color: #90e0ef;
+}
+
+.social-link li:hover{
+	color: #caf0f8;
+	font-size: 1.779rem;
 }
 
 .copyright{
@@ -261,6 +285,7 @@ footer{
 .copyright h2{
 	text-align: center;
 	font-size: 1em;
+	color: #ade8f4;
 }
 
 @media screen and (max-width: 1260px) {
@@ -268,24 +293,6 @@ footer{
 	.hero-text {
 	  width: 40%;
 	}
-/* 
-	.hero-text h1, .hero-text p{
-		padding-bottom: 1.7rem;
-	}
-
-	.hero-text h1{
-		font-size: 2.57rem;
-	}
-
-
-	.hero-text p{
-		font-size: 1.333rem;
-	}
-
-	.register-btn{
-		background-color: #04AA6D;
-		font-size: 1.77rem;
-	} */
 }
 
 
@@ -317,7 +324,6 @@ footer{
 	}
 
 	.register-btn{
-		background-color: #04AA6D;
 		font-size: 1.77rem;
 	}
 
@@ -337,10 +343,6 @@ footer{
 
 
 	/* =================== footer ============	 */
-	footer{
-		background: red;
-	}
-
 	.footer-container{
 		gap: .6em;
 	}
@@ -376,11 +378,6 @@ footer{
 	}
 
 	/* =================== footer ============	 */
-	footer{
-		background: #46269d;
-	}
-
-
 	.social .social-link{
 	  flex-grow:.2;
 	}
@@ -396,7 +393,6 @@ footer{
 
 	nav{
 		height: 10vh;
-		background: #2C3333;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
@@ -411,7 +407,6 @@ footer{
 
 	.mobile-nav{
 		width: 100%;
-		background: #2C3333;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
@@ -420,8 +415,12 @@ footer{
 
 
 	nav ul li a{
-		color: #CBE4DE;
 		font-size: 1.666em;
+		color: #03045e;
+	}
+
+	nav ul li a:hover{
+		color: #ade8f4;
 	}
 
 	.nav-link{
@@ -429,6 +428,8 @@ footer{
 		align-items: center;
 		flex-direction: column;
 		justify-content: flex-start;
+		background: #00b4d8;
+
 	}
 
 	.nav-link li{
@@ -442,17 +443,14 @@ footer{
 
 
 	.mobile-nav .logo{
-		color: #CBE4DE;
 		font-size: 1.8rem;
 	}
 
 	.mobile-nav i{
-		color: #0E8388;
 		font-size: 1.8rem;
 	}
 
 	#mobile-menu{
-		background: #2E4F4F;
 		position: fixed;
 		height: 100vh;
 		width: 80vw;
@@ -490,10 +488,14 @@ footer{
 	}
 
 
-	/* =================== footer ============	 */
-	footer{
-		background: yellow;
+	/* ======= prize section =====	 */
+	.prize-section{
+		padding: 3.777em 1.777em;
 	}
+
+
+
+	/* =================== footer ============	 */
 
 	.footer-container{
 		grid-template-columns: repeat(2, 1fr);
@@ -549,9 +551,6 @@ footer{
 		font-size: 1.11rem;
 	}
 	/* =================== footer ============	 */
-	footer{
-		background: green;
-	}
 
 	.footer-container{
 		grid-template-columns: 1fr;

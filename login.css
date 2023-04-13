@@ -1,5 +1,13 @@
+body{
+  background: #90e0ef;
+}
+
+a{
+  text-decoration: none;
+}
+
 .form-container{
-  background: red;
+  background: #0077b6;
   max-width: 500px;
   margin: 130px auto;
   border-radius: 1.22rem;
@@ -8,6 +16,8 @@
 .form-container h2{
   text-align: center;
   font-size: 2.555rem;
+  font-family: "Roboto";
+  color: #90e0ef;
   padding: 2rem 0;
 }
 
@@ -25,21 +35,31 @@
   font-size: 1rem;
   border-radius: .77rem;
   border: none;
-  background: lightblue;
+  background: #ade8f4;
+  outline: none;
 }
 
-.login-form input:last-child{
+.login-form input:last-child, 
+.login-form input.verify-btn{
   padding: 1rem 3rem;
-  color: drak;
+  color: #00b4d8;
+  background-color: #03045e;
 }
+
+.login-form input:last-child:hover, 
+.login-form input.verify-btn:hover{
+  color: #03045e;
+  background-color: #023e8a;
+}
+
 
 .login-form input.verify-btn{
-  color: red;
   padding: .33rem 1.333rem;
 }
 
 .login-extra{
   padding: 2.44rem;
+  font-family: "Roboto";
 }
 
 .login-extra{
@@ -50,16 +70,18 @@
   padding: 1rem 0;
 }
 
+.login-extra, .login-extra a {
+  color: #90e0ef;
+}
+
 @media screen and (max-width: 600px) {
   .form-container{
-    background: green;
     max-width: 500px;
   }
 }
 
 @media screen and (max-width: 480px) {
   .form-container{
-    background: purple;
     max-width: 380px;
   }
 }
